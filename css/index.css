@@ -7,13 +7,28 @@ body {
     margin: 0;
 }
 
+.layout__sidebar, .layout__page-content { float: left; }
+
 .layout__sidebar {
-    float: left;
     width: 300px;
     min-height: 100vh;
 }
 
+.layout__page-content::after { clear: both; }
+
 .sidebar {
     padding: 20px;
     background-color: #FAFAFA;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.page-content {
+    padding: 20px;
+}
+
+.email {
+    margin-bottom: 60px;
 }

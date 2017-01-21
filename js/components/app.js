@@ -9,6 +9,9 @@ var App = function(props) {
     return (
         <div className="layout">
             <Sidebar mailboxes={mailboxes} className="layout__sidebar" />
+            <div className="layout__page-content">
+                {props.children}
+            </div>
         </div>
     );
 };
